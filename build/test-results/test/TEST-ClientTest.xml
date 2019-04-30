@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ClientTest" tests="4" skipped="0" failures="4" errors="0" timestamp="2019-04-30T20:36:20" hostname="mumo-ThinkPad-X240" time="0.244">
+<testsuite name="ClientTest" tests="4" skipped="0" failures="4" errors="0" timestamp="2019-04-30T21:22:57" hostname="mumo-ThinkPad-X240" time="0.396">
   <properties/>
-  <testcase name="savingClient_true" classname="ClientTest" time="0.227">
+  <testcase name="savingClient_true" classname="ClientTest" time="0.377">
     <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
@@ -418,7 +418,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 	... 45 more
 </failure>
   </testcase>
-  <testcase name="delete_deletesClient_true" classname="ClientTest" time="0.005">
+  <testcase name="delete_deletesClient_true" classname="ClientTest" time="0.006">
     <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
