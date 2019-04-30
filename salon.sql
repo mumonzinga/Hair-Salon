@@ -34,7 +34,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: clients; Type: TABLE; Schema: public; Owner: alpha
+-- Name: clients; Type: TABLE; Schema: public; Owner: ;
 --
 
 CREATE TABLE public.clients (
@@ -46,10 +46,10 @@ CREATE TABLE public.clients (
 );
 
 
-ALTER TABLE public.clients OWNER TO alpha;
+ALTER TABLE public.clients ;
 
 --
--- Name: clients_id_seq; Type: SEQUENCE; Schema: public; Owner: alpha
+-- Name: clients_id_seq; Type: SEQUENCE; Schema: public; Owner:
 --
 
 CREATE SEQUENCE public.clients_id_seq
@@ -61,17 +61,17 @@ CREATE SEQUENCE public.clients_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.clients_id_seq OWNER TO alpha;
+ALTER TABLE public.clients_id_seq
 
 --
--- Name: clients_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: alpha
+-- Name: clients_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner:
 --
 
 ALTER SEQUENCE public.clients_id_seq OWNED BY public.clients.id;
 
 
 --
--- Name: stylists; Type: TABLE; Schema: public; Owner: alpha
+-- Name: stylists; Type: TABLE; Schema: public; Owner: ;
 --
 
 CREATE TABLE public.stylists (
@@ -82,10 +82,10 @@ CREATE TABLE public.stylists (
 );
 
 
-ALTER TABLE public.stylists OWNER TO alpha;
+ALTER TABLE public.stylists
 
 --
--- Name: stylists_id_seq; Type: SEQUENCE; Schema: public; Owner: alpha
+-- Name: stylists_id_seq; Type: SEQUENCE; Schema: public; Owner:
 --
 
 CREATE SEQUENCE public.stylists_id_seq
@@ -97,31 +97,31 @@ CREATE SEQUENCE public.stylists_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.stylists_id_seq OWNER TO alpha;
+ALTER TABLE public.stylists_id_seq
 
 --
--- Name: stylists_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: alpha
+-- Name: stylists_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: ;
 --
 
 ALTER SEQUENCE public.stylists_id_seq OWNED BY public.stylists.id;
 
 
 --
--- Name: clients id; Type: DEFAULT; Schema: public; Owner: alpha
+-- Name: clients id; Type: DEFAULT; Schema: public; Owner:
 --
 
 ALTER TABLE ONLY public.clients ALTER COLUMN id SET DEFAULT nextval('public.clients_id_seq'::regclass);
 
 
 --
--- Name: stylists id; Type: DEFAULT; Schema: public; Owner: alpha
+-- Name: stylists id; Type: DEFAULT; Schema: public; Owner:
 --
 
 ALTER TABLE ONLY public.stylists ALTER COLUMN id SET DEFAULT nextval('public.stylists_id_seq'::regclass);
 
 
 --
--- Data for Name: clients; Type: TABLE DATA; Schema: public; Owner: alpha
+-- Data for Name: clients; Type: TABLE DATA; Schema: public; Owner:
 --
 
 COPY public.clients (id, name, gender, contact, stylist_id) FROM stdin;
@@ -130,7 +130,7 @@ COPY public.clients (id, name, gender, contact, stylist_id) FROM stdin;
 
 
 --
--- Data for Name: stylists; Type: TABLE DATA; Schema: public; Owner: alpha
+-- Data for Name: stylists; Type: TABLE DATA; Schema: public; Owner:
 --
 
 COPY public.stylists (id, name, gender, contact) FROM stdin;
@@ -140,21 +140,21 @@ COPY public.stylists (id, name, gender, contact) FROM stdin;
 
 
 --
--- Name: clients_id_seq; Type: SEQUENCE SET; Schema: public; Owner: alpha
+-- Name: clients_id_seq; Type: SEQUENCE SET; Schema: public; Owner:
 --
 
 SELECT pg_catalog.setval('public.clients_id_seq', 23, true);
 
 
 --
--- Name: stylists_id_seq; Type: SEQUENCE SET; Schema: public; Owner: alpha
+-- Name: stylists_id_seq; Type: SEQUENCE SET; Schema: public; Owner:
 --
 
 SELECT pg_catalog.setval('public.stylists_id_seq', 53, true);
 
 
 --
--- Name: clients clients_pkey; Type: CONSTRAINT; Schema: public; Owner: alpha
+-- Name: clients clients_pkey; Type: CONSTRAINT; Schema: public; Owner:
 --
 
 ALTER TABLE ONLY public.clients
@@ -162,7 +162,7 @@ ALTER TABLE ONLY public.clients
 
 
 --
--- Name: stylists stylists_pkey; Type: CONSTRAINT; Schema: public; Owner: alpha
+-- Name: stylists stylists_pkey; Type: CONSTRAINT; Schema: public; Owner:
 --
 
 ALTER TABLE ONLY public.stylists
