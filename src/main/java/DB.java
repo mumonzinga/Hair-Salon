@@ -8,7 +8,7 @@ public class DB {
 
         try {
             if (System.getenv("DATABASE_URL") == null) {
-                dbUri = new URI("postgres://alpha:pw*0711937973@localhost:5432/hair_salon");
+                dbUri = new URI("postgres://mumo:pw*0711937973@localhost:5432/hair_salon");
             } else {
                 dbUri = new URI(System.getenv("DATABASE_URL"));
             }
