@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ClientTest" tests="4" skipped="0" failures="4" errors="0" timestamp="2019-04-30T22:31:52" hostname="mumo-ThinkPad-X240" time="0.173">
+<testsuite name="ClientTest" tests="4" skipped="0" failures="4" errors="0" timestamp="2019-05-02T07:41:34" hostname="mumo-ThinkPad-X240" time="0.162">
   <properties/>
-  <testcase name="savingClient_true" classname="ClientTest" time="0.148">
-    <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;
+  <testcase name="savingClient_true" classname="ClientTest" time="0.134">
+    <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;mumo&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;mumo&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -58,7 +58,7 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;alpha&quot;
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;mumo&quot;
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:420)
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:195)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
@@ -75,7 +75,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 54 more
 </failure>
-    <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;
+    <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;mumo&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;mumo&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -122,7 +122,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;alpha&quot;
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;mumo&quot;
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:420)
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:195)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
@@ -140,8 +140,8 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 	... 45 more
 </failure>
   </testcase>
-  <testcase name="findCLient_true" classname="ClientTest" time="0.005">
-    <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;
+  <testcase name="findCLient_true" classname="ClientTest" time="0.009">
+    <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;mumo&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;mumo&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -197,7 +197,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;alpha&quot;
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;mumo&quot;
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:420)
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:195)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
@@ -214,7 +214,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 54 more
 </failure>
-    <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;
+    <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;mumo&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;mumo&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -261,7 +261,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;alpha&quot;
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;mumo&quot;
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:420)
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:195)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
@@ -279,8 +279,8 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 	... 45 more
 </failure>
   </testcase>
-  <testcase name="updatingClient_true" classname="ClientTest" time="0.01">
-    <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;
+  <testcase name="updatingClient_true" classname="ClientTest" time="0.011">
+    <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;mumo&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;mumo&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -336,7 +336,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;alpha&quot;
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;mumo&quot;
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:420)
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:195)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
@@ -353,7 +353,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 54 more
 </failure>
-    <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;
+    <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;mumo&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;mumo&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -400,7 +400,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;alpha&quot;
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;mumo&quot;
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:420)
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:195)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
@@ -419,7 +419,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 </failure>
   </testcase>
   <testcase name="delete_deletesClient_true" classname="ClientTest" time="0.008">
-    <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;
+    <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;mumo&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;mumo&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -475,7 +475,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;alpha&quot;
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;mumo&quot;
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:420)
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:195)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
@@ -492,7 +492,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 54 more
 </failure>
-    <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;alpha&quot;
+    <failure message="org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;mumo&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;mumo&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -539,7 +539,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;alpha&quot;
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;mumo&quot;
 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:420)
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:195)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)

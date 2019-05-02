@@ -9,24 +9,24 @@ public class ClientTest {
     //testing save method
     @Test
     public void savingClient_true() {
-        Client client = new Client("Ninja","M","100", 2);
+        Client client = new Client("Nimrod","M","130", 2);
         client.save();
         assertEquals("Ninja", client.getName());
     }
     // find client test
     @Test
     public void findCLient_true() {
-        Client client = new Client("Ninja","M","100", 2);
+        Client client = new Client("Nimrod","M","130", 2);
         client.save();
         assertEquals("Ninja", Client.find(client.getId()).getName());
     }
     // updating client test
     @Test
     public void updatingClient_true() {
-        Client client = new Client("Ninja","M","100", 2);
+        Client client = new Client("Nimrod","M","130", 2);
         client.save();
-        client.update("Brandon", "M", "100", 2);
-        assertEquals("Brandon", Client.find(client.getId()).getName());
+        client.update("Brian", "M", "100", 2);
+        assertEquals("Brian", Client.find(client.getId()).getName());
         assertEquals("M", Client.find(client.getId()).getGender());
         assertEquals("100", Client.find(client.getId()).getContact());
         assertEquals(2, Client.find(client.getId()).getStylist());
@@ -34,7 +34,7 @@ public class ClientTest {
     //delete client test
     @Test
     public void delete_deletesClient_true() {
-        Client client = new Client("Ninja","M","100", 2);
+        Client client = new Client("Nimrod","M","130", 2);
         client.save();
         int clientId = client.getId();
         client.delete();
